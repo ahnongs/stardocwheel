@@ -134,7 +134,7 @@ button:active {
   
 
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
     body {
       height: auto; /* 기본 높이 값으로 변경 */
     }
