@@ -119,22 +119,22 @@ function removeLast(){
 
  //테스트
 
-// 룰렛이 멈췄을 때 호출되는 함수
-const rouletteStopped = () => {
-    // 빵빠레 애니메이션을 시작합니다.
-    startCelebrationAnimation();
-  };
+// // 룰렛이 멈췄을 때 호출되는 함수
+// const rouletteStopped = () => {
+//     // 빵빠레 애니메이션을 시작합니다.
+//     startCelebrationAnimation();
+//   };
   
-  // 빵빠레 애니메이션을 시작하는 함수
-  const startCelebrationAnimation = () => {
-    // 빵빠레를 만듭니다.
-    for (let i = 0; i < 100; i++) {
-      const celebration = document.createElement('div');
-      celebration.classList.add('celebration-particle');
-      celebration.style.left = `${Math.random() * 100}%`;
-      document.getElementById('celebration').appendChild(celebration);
-    }
-  };
+//   // 빵빠레 애니메이션을 시작하는 함수
+//   const startCelebrationAnimation = () => {
+//     // 빵빠레를 만듭니다.
+//     for (let i = 0; i < 100; i++) {
+//       const celebration = document.createElement('div');
+//       celebration.classList.add('celebration-particle');
+//       celebration.style.left = `${Math.random() * 100}%`;
+//       document.getElementById('celebration').appendChild(celebration);
+//     }
+//   };
   
 
 
