@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spinning Wheel Game</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+          <div id="menu">
+            <div id="arrow"></div>
+            <canvas width="600" height='600'></canvas>  
+            <button onclick="rotate()">돌리기</button>
+            <div id="addDiv">
+              <input type="text" id="menuAdd">
+              <button onclick="add()">추가</button>
+              <button onclick="removeLast()">삭제</button>
+             
+            </div>
+            <div id="celebration"></div>
+          </div>
+        
+        <script src="script.js"></script>
+
+</body>
+</html>

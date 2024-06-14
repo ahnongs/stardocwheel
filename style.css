@@ -1,0 +1,134 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+
+* {
+  font-family: Pretendard;
+}
+
+body {
+  background: #f7f8fc;
+  height : 960px;
+}
+
+canvas {
+  margin-top : 100px;  
+  transition: 2s;
+}
+
+button {
+  z-index : 1000;
+  background: #febf00;
+  margin-top: 1rem;
+  padding: .8rem 1.8rem;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: .2s;
+  cursor: pointer;
+}
+
+button:active {
+  background: #444;
+  color: #f9f9f9;
+}
+ 
+#menu {
+  width: 100%;
+  height : 960px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  text-align : center;
+  flex-direction: column;
+  position: relative;
+}
+
+/* #menu::before {
+  margin-top : 100px; 
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 50px;
+  border-radius: 5px;
+  background: #000;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 22;
+} */
+
+/* #menu::before {
+    margin-top : 100px; 
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background: #000;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%, 0%);
+    z-index: 22;
+  } */
+
+
+  #arrow{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 40px 60px 40px;
+    border-color: transparent transparent #ff0000 transparent;
+    transform: rotate(180deg);
+    margin-top : 60px;
+    z-index: 22;
+  }
+
+  /* #arrow::before{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #;
+    top: 60px;
+    transform: translate(-50%, 0%);
+  } */
+
+
+  
+
+
+  /* 테스트 */
+  #celebration {
+    position: absolute;
+    top: 50%; /* 룰렛 요소의 중앙에서 시작 */
+    left: 50%; /* 룰렛 요소의 중앙에서 시작 */
+    transform: translate(-50%, -50%); /* 룰렛 요소의 중앙 정렬 */
+    width: 600px; /* 룰렛 요소의 너비 */
+    height: 600px; /* 룰렛 요소의 높이 */
+    pointer-events: none;
+    z-index: 100;
+  }
+  
+  
+  .celebration-particle {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url('https://i.imgur.com/BxBgELX.png'); /* 빵빠레 이미지 경로 설정 */
+    background-size: contain;
+    animation: celebration-fall 2s ease-out; /* 빵빠레가 튀어나오는 애니메이션 적용 */
+  }
+  
+  @keyframes celebration-fall {
+    0% {
+      transform: translateY(0) rotate(0);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(100vh) rotate(720deg); /* 화면 아래로 빵빠레가 튀어나오는 애니메이션 */
+      opacity: 1;
+    }
+  }
+  
+  
