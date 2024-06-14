@@ -138,3 +138,20 @@ function removeLast(){
   
 
 
+
+
+// 핸드폰 화면 너비에 따라 캔버스 크기 조절
+const setCanvasSize = () => {
+  const screenWidth = window.innerWidth;
+  const screenHeight = window.innerHeight;
+  
+  // 캔버스 크기를 화면 너비의 일부분으로 설정
+  $c.width = screenWidth * 0.8; // 예시로 화면 너비의 80%로 설정
+  $c.height = $c.width; // 가로 세로 비율 유지
+};
+
+// 페이지 로드 시 캔버스 크기 설정
+window.addEventListener("load", setCanvasSize);
+
+// 창 크기 변경 시 캔버스 크기 재조정
+window.addEventListener("resize", setCanvasSize);
